@@ -18,6 +18,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/matkulMengulang','MahasiswaController@matkulMengulang')->name('matkulMengulang');
+Route::get('/performa','MahasiswaController@performa')->name('performa');
+Route::get('/detailMatkulMengulang','MahasiswaController@detailMatkulMengulang')->name('detailMatkulMengulang');
 Route::get('/chart','MahasiswaController@chart')->name('chart');
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('/importExcel', 'MahasiswaController@importExcel')->name('importExcel');

@@ -15,10 +15,20 @@ class CreateMahasiswasTable extends Migration
     {
         Schema::create('mahasiswa', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('kodeMahasiswa');
-            $table->string('namaMahasiswa');
-            $table->string('kelas');
-            $table->string('angkatan');
+            $table->string('STUDENTID');
+            $table->string('FULLNAME');
+            $table->string('CLASS');
+            $table->string('STUDYPROGRAMNAME');
+            $table->string('FACULTYNAME');
+            $table->string('STUDENTSCHOOLYEAR');
+            $table->string('STUDENTTYPENAME');
+            $table->string('SELECTIONPATHNAME')->nullable();
+            $table->integer('TAK_POINT');
+            $table->string('PEKERJAANAYAH');
+            $table->integer('PENGHASILANAYAH')->nullable();
+            $table->string('PEKERJAANIBU');
+            $table->integer('PENGHASILANIBU')->nullable();
+            $table->string('SENIORHIGHSCHOOL');
             $table->timestamps();
         });
     }

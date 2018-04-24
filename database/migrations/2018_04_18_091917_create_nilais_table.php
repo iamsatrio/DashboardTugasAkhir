@@ -13,8 +13,11 @@ class CreateNilaisTable extends Migration
      */
     public function up()
     {
-        Schema::create('nilais', function (Blueprint $table) {
+        Schema::create('nilai', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('id_mahasiswa');
+            $table->string('id_mata_kuliah');
+            $table->integer('nilai');
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ class CreateNilaisTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('nilais');
+        Schema::dropIfExists('nilai');
     }
 }
