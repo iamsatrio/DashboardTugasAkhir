@@ -40,7 +40,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class='sidebar-link' href="#">
+        <a class='sidebar-link' href="{{route('matkulMengulang')}}">
                 <span class="icon-holder">
                   <i class="c-brown-500 ti-user"></i>
                 </span>
@@ -56,7 +56,7 @@
         {{--</a>--}}
       {{--</li>--}}
       <li class="nav-item">
-        <a class='sidebar-link' href="#">
+        <a class='sidebar-link' href="{{route('performa')}}">
                 <span class="icon-holder">
                   <i class="c-deep-orange-500 ti-alert"></i>
                 </span>

@@ -483,7 +483,7 @@
                                             <div class="layers">
                                                 <span class="mB-5">10 Mata Kuliah Paling Banyak Diulang</span>
                                                 <div class="layer w-100 mT-10">
-                                                    <a href="{{route('matkulMengulang')}}">
+                                                    <a href="{{route('detailMatkulMengulang')}}">
                                                         <small class="fw-600 c-grey-700">Struktur Data dan Pemrograman
                                                             Lanjut
                                                         </small>

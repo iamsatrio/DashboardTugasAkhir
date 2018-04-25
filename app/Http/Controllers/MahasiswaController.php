@@ -89,7 +89,7 @@ class MahasiswaController extends Controller
 
     public function performa()
     {
-        return view('performa');
+        return view('performa-angkatan');
     }
 
     public function matkulMengulang()
